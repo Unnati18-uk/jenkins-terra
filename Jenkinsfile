@@ -25,7 +25,7 @@ pipeline{
         stage('EXECUTE TERRAFORM'){
             steps{
                 //it will execute all configuration
-                sh 'terraform apply --auto-approve'
+                sh 'terraform destroy --auto-approve'
                 echo 'apply successful'
             }
         }
